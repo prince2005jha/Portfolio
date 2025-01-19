@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        .navbar li {
+            margin: 0 1rem;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .home {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 6rem 2rem;
+        }
+        .home h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .home p {
+            font-size: 1.25rem;
+        }
+        .home .btn {
+            background: #fff;
+            color: #333;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            margin-top: 1rem;
+        }
+        .projects .project {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            margin: 1rem auto;
+            max-width: 600px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #2575fc;
+            color: #fff;
+            border-radius: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin: 0.5rem 0;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="container">
+            <h1>Hi, I'm Prince Kumar Jha</h1>
+            <p>Machine Learning Engineer | Python Developer | Tech Enthusiast</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate Machine Learning Engineer with expertise in building intelligent systems using modern frameworks and tools. I specialize in solving complex problems with data-driven approaches and innovative algorithms.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Dynamic Route Optimization</h3>
+                    <p>A Python-based application integrating APIs like TomTom and Google Maps for emission reduction and efficient routing.</p>
+                    <a href="#" target="_blank">View Demo</a> | <a href="#" target="_blank">GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Predictive Maintenance System</h3>
+                    <p>Developed a machine learning model to predict equipment failures using TensorFlow and Pandas.</p>
+                    <a href="#" target="_blank">View Demo</a> | <a href="#" target="_blank">GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Real-Time AQI Monitoring</h3>
+                    <p>A web app displaying real-time air quality index using AQICN API and Python.</p>
+                    <a href="#" target="_blank">View Demo</a> | <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Machine Learning</li>
+                <li>TensorFlow</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Prince Kumar Jha. All rights reserved.</p>
+    </footer>
+</body>
+</html>
